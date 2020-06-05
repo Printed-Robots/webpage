@@ -20,24 +20,23 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
-
-      - run: npm install &&
-             npm --version &&
-             npm install -g postcss-cli &&
-             npm install autoprefixer &&
-             npm audit fix
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.71.1'
           extended: true
 
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
       - name: Build
-        run: hugo --minify
+      - run: npm install &&
+             npm --version &&
+             npm install -g postcss-cli &&
+             npm install autoprefixer &&
+             npm audit fix &&
+             hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
