@@ -6,28 +6,32 @@ on:
       - master
 
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
+  build:
+    runs-on: ubuntu-16.04
+    strategy:
+      matrix:
+        node: [ '10', '12', '14' ]
+    name: Node ${{ matrix.node }} sample
     steps:
       - uses: actions/checkout@v2
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.71.1'
-          extended: true
-
       - uses: actions/setup-node@v1
         with:
-          node-version: '12'
+          node-version: ${{ matrix.node }}
       - run: npm install
       - run: npm --version 
       - run: npm install -g postcss-cli
       - run: npm install autoprefixer
       - run: npm audit fix
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.71.1'
+          extended: true
 
       - name: Build
         run: hugo --minify
