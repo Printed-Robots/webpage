@@ -23,6 +23,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12'
+      - run: npm install
+      - run: npm test
+      - run: npm --version 
       - run: npm install -g postcss-cli
       - run: npm install autoprefixer
       - run: npm audit fix
