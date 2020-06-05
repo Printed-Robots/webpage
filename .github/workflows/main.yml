@@ -31,7 +31,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Build
-      - run: npm install &&
+        run: npm install &&
              npm --version &&
              npm install -g postcss-cli &&
              npm install autoprefixer &&
