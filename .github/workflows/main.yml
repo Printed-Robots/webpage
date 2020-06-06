@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
         node: [ '10', '11', '12', '13', '14' ]
         os: [ubuntu-16.04, ubuntu-18.04, ubuntu-20.04, ubuntu-latest]
@@ -17,8 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: recursive  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 1         # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -33,9 +33,8 @@ jobs:
       - name: Build
         run: npm install &&
              npm --version &&
-             npm install -g postcss-cli &&
-             npm install autoprefixer &&
-             npm audit fix &&
+             sudo npm install -D --save autoprefixer &&
+             sudo npm install -D --save postcss-cli &&
              hugo --minify
 
       - name: Deploy
