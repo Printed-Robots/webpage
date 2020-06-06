@@ -11,12 +11,13 @@
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
    version="1.1"
-   viewBox="0 0 210 297"
-   height="297mm"
-   width="210mm">
+   viewBox="0 0 90 90"
+   height="90mm"
+   width="90mm">
   <defs
      id="defs2" />
   <sodipodi:namedview
+     units="mm"
      inkscape:window-maximized="1"
      inkscape:window-y="-6"
      inkscape:window-x="-6"
@@ -24,9 +25,9 @@
      inkscape:window-width="1500"
      showgrid="false"
      inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      inkscape:document-units="mm"
-     inkscape:cy="341.44967"
+     inkscape:cy="227.16396"
      inkscape:cx="255.99536"
      inkscape:zoom="1.4"
      inkscape:pageshadow="2"
@@ -53,8 +54,8 @@
      inkscape:groupmode="layer">
     <circle
        r="45"
-       cy="81.831848"
-       cx="66.051338"
+       cy="45"
+       cx="45"
        id="path24"
        style="fill:#000000;stroke-width:0.264583" />
   </g>
@@ -64,20 +65,20 @@
      inkscape:label="Ebene 1">
     <circle
        r="40"
-       cy="81.64286"
-       cx="66.145836"
+       cy="44.811012"
+       cx="45.094498"
        id="path18"
-       style="fill:#ff8000;fill-rule:evenodd;stroke-width:0.264583;fill-opacity:1" />
+       style="fill:#ff8000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583" />
     <circle
        r="15"
-       cy="104.13243"
-       cx="69.453117"
+       cy="67.300583"
+       cx="48.401779"
        id="path20"
        style="fill:#000000;stroke-width:0.264583" />
     <rect
        ry="3.96875"
-       y="54.777058"
-       x="38.931549"
+       y="17.94521"
+       x="17.880209"
        height="27.810732"
        width="50.270832"
        id="rect22"
@@ -85,8 +86,8 @@
     <rect
        transform="rotate(-32.265135)"
        ry="4.0632439"
-       y="121.85104"
-       x="-3.3865798"
+       y="79.468513"
+       x="-1.5250788"
        height="8"
        width="40"
        id="rect446"
@@ -97,8 +98,8 @@
        id="rect446-9"
        width="40"
        height="8"
-       x="93.902969"
-       y="-6.3578906"
+       x="53.139458"
+       y="-18.108633"
        ry="4.0632439" />
   </g>
 </svg>
