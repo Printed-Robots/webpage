@@ -1,12 +1,10 @@
 ---
 date: 2020-06-06
 title: "Watch this cute robot explore the world!"
-linkTitle: "Explore the World"
+linkTitle: "Cute robot explores the world"
 description: "This is the initial version of my selfbalancing robot"
 author: powJ2 ([@J2pow](https://twitter.com/j2pow))
 ---
-
-**This is the initial version of my self balancing robot**
 
 ## Watch it explore the world!
 
