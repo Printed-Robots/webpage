@@ -1,46 +1,32 @@
 ---
-date: 2018-10-06
-title: "Easy documentation with Docsy"
-linkTitle: "Announcing Docsy"
-description: "The Docsy Hugo theme lets project maintainers and contributors focus on content, not on reinventing a website infrastructure from scratch"
-author: Riona MacNamara ([@rionam](https://twitter.com/bepsays))
-resources:
-- src: "**.{png,jpg}"
-  title: "Image #:counter"
-  params:
-    byline: "Photo: Riona MacNamara / CC-BY-CA"
+date: 2020-06-06
+title: "Watch this cute robot explore the world!"
+linkTitle: "Explore the World"
+description: "This is the initial version of my selfbalancing robot"
+author: powJ2 ([@J2pow](https://twitter.com/j2pow))
 ---
 
-**This is a typical blog post that includes images.**
+**This is the initial version of my self balancing robot**
 
-The front matter specifies the date of the blog post, its title, a short description that will be displayed on the blog landing page, and its author.
+## Watch it explore the world!
 
-## Including images
+{{< youtube id="p-f6EHCXiaI" autoplay="false" >}}
 
-Here's an image (`featured-sunset-get.png`) that includes a byline and a caption.
+## Details
 
-{{< imgproc sunset Fill "600x300" >}}
-Fetch and scale an image in the upcoming Hugo 0.43.
-{{< /imgproc >}}
+### For the technical enthusiast
 
-The front matter of this post specifies properties to be assigned to all image resources:
-
-```
-resources:
-- src: "**.{png,jpg}"
-  title: "Image #:counter"
-  params:
-    byline: "Photo: Riona MacNamara / CC-BY-CA"
-```
-
-To include the image in a page, specify its details like this:
-
-```
-{{< imgproc sunset Fill "600x300" >}}
-Fetch and scale an image in the upcoming Hugo 0.43.
-{{< /imgproc >}}
-```
-
-The image will be rendered at the size and byline specified in the front matter.
+This is a ROS 2.0 based robot using a Raspberry Pi 3b with a Navio2 Sensor board. To balance the robot there are two PID controllers in use - one for velocity and one for the angle. While I can measeure the angle, I currently have no sensor to measure the velocity. This makes it hard for the robot to stand on uneven ground. But fear not: Sensors are on their way :)
 
 
+### For the hardware fan
+
+The structural parts are 3d printed. To move the robot there are two brushless gimbal motors, which are awesomly quiet! And .. there is a small fan to cool the robot ;)
+
+
+### For the open source lover
+
+The code used to make this robot balance can be found here
+- https://github.com/jsqu4re/balance_robot
+- https://github.com/jsqu4re/balance_robot_msgs
+- https://github.com/jsqu4re/n2r2
