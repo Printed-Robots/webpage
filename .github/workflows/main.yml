@@ -1,4 +1,4 @@
-name: github pages
+name: Publish Github Pages
 
 on:
   push:
@@ -7,42 +7,31 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
-        node: [ '10', '11', '12', '13', '14' ]
-        os: [ubuntu-16.04, ubuntu-18.04, ubuntu-20.04, ubuntu-latest]
-    name: Node ${{ matrix.node }} on ${{ matrix.os }} test
+        version: [0.72.0]
+        image: [ext-alpine]
+
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: recursive  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 1         # Fetch all history for .GitInfo and .Lastmod
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 1         # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.71.1'
-          extended: true
+    - name: hugo
+      uses: klakegg/actions-hugo@1.0.0
+      with:
+        version: ${{ matrix.version }}
+        image: ${{ matrix.image }}
 
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
-
-      - name: Build
-        run: npm install &&
-             npm --version &&
-             sudo npm install -D --save autoprefixer &&
-             sudo npm install -D --save postcss-cli &&
-             hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          full_commit_message: ${{ github.event.head_commit.message }}
-          external_repository: Printed-Robots/Printed-Robots.github.io
-          publish_branch: master
-
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        full_commit_message: ${{ github.event.head_commit.message }}
+        external_repository: Printed-Robots/Printed-Robots.github.io
+        publish_branch: master
