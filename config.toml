@@ -58,13 +58,13 @@ description = "Proudly reinventing the wheel"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-[languages.no]
-title = "Printed Robots"
-description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
+# [languages.no]
+# title = "Printed Robots"
+# description = "Docsy er operativsystem for skyen"
+# languageName ="Norsk"
+# contentDir = "content/no"
+# time_format_default = "02.01.2006"
+# time_format_blog = "02.01.2006"
 
 [markup]
   [markup.goldmark]
@@ -75,7 +75,7 @@ time_format_blog = "02.01.2006"
 
 [params]
 # FIXME: Find out what to do here!
-copyright = "The Printed Robots Authors"
+copyright = "The Printed Robots Authors: "
 privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
