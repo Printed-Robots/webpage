@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [0.56.3, 0.57.2, ]
+        version: [0.56.3, 0.57.2, ""]
         image: [busybox, alpine, alpine-ext, debian-ext, ubuntu-ext]
 
     runs-on: ubuntu-latest
