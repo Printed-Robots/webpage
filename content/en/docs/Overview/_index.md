@@ -3,11 +3,11 @@ title: "Overview"
 linkTitle: "Overview"
 weight: 1
 description: >
-  Here's where your user finds out if your project is for them.
+  What is Printed Robots about?
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+Under Construction!
 {{% /pageinfo %}}
 
 

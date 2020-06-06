@@ -1,7 +1,7 @@
 ---
-title: "News from Printed Robots"
-linkTitle: "News"
-weight: 20
+title: "Printed Robots Blog"
+linkTitle: "Blog"
+menu:
+  main:
+    weight: 10
 ---
-
-
