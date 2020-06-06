@@ -34,4 +34,4 @@ jobs:
         publish_dir: ./public
         full_commit_message: ${{ github.event.head_commit.message }}
         external_repository: Printed-Robots/Printed-Robots.github.io
-        # publish_branch: master
+        publish_branch: master
