@@ -1,4 +1,4 @@
-name: Hugo
+name: Test Hugo Build
 
 on: [push]
 
@@ -8,7 +8,7 @@ jobs:
       fail-fast: false
       matrix:
         version: [0.71.0, 0.72.0, ""]
-        image: [busybox, alpine, ext-alpine, ext-debian, ext-ubuntu]
+        image: [ext-alpine, ext-debian, ext-ubuntu]
 
     runs-on: ubuntu-latest
 
