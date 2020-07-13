@@ -1,6 +1,14 @@
-There was some encouragement to post about my balancing robot here on discourse. So I decided to write my first entry. If you want to know more, feel free to leave a comment below :) Please also write about your ideas and whether you would like to build one of these robots yourself.
+---
+date: 2020-07-08
+title: "Videte Wheel to climb Stairs"
+linkTitle: "Robot tries to climb stairs"
+description: "This is the second version of my self balancing robot"
+author: powJ2 ([@J2pow](https://twitter.com/j2pow))
+---
 
-![Balancing Robot Version 2.0|690x460](upload://s7TX2sUB2AwStYjn02ahLemePIL.jpeg) 
+Originally published on [discourse.ros.org](https://discourse.ros.org/t/self-balancing-robot-tries-to-climb-stairs/14545)
+
+There was some encouragement to post about my balancing robot here on discourse. So I decided to write my first entry. If you want to know more, feel free to leave a comment below :) Please also write about your ideas and whether you would like to build one of these robots yourself.
 
 # WHY
 
