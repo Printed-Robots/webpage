@@ -1,8 +1,8 @@
 ---
-date: 2020-06-06
+date: 2020-05-19
 title: "Building a Hubless Inverted Pendulum Wheel!"
 linkTitle: "Building a Hubless Inverted Pendulum Wheel"
-description: "This is the videte wheel for version two of my selfbalancing robot"
+description: "This is the Videte Wheel for version two of my self balancing robot"
 author: powJ2 ([@J2pow](https://twitter.com/j2pow))
 ---
 

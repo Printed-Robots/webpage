@@ -1,12 +1,12 @@
 ---
 date: 2020-07-08
-title: "Videte Wheel to climb Stairs"
+title: "Videte Wheel to climb stairs"
 linkTitle: "Robot tries to climb stairs"
 description: "This is the second version of my self balancing robot"
 author: powJ2 ([@J2pow](https://twitter.com/j2pow))
 ---
 
-Originally published on [discourse.ros.org](https://discourse.ros.org/t/self-balancing-robot-tries-to-climb-stairs/14545)
+Originally published on [discourse.ros.org](https://discourse.ros.org/t/self-balancing-robot-tries-to-climb-stairs/14545).
 
 There was some encouragement to post about my balancing robot here on discourse. So I decided to write my first entry. If you want to know more, feel free to leave a comment below :) Please also write about your ideas and whether you would like to build one of these robots yourself.
 
