@@ -16,6 +16,8 @@ author: powJ2 ([@J2pow](https://twitter.com/j2pow))
 
 ### Building
 
+{{< youtube id="fcLHNTP9zKw" autoplay="false" >}}
+
 ## Software
 
 ### ROS 2.0
