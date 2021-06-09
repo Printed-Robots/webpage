@@ -8,6 +8,8 @@ author: powJ2 ([@J2pow](https://twitter.com/j2pow))
 
 ## Idea
 
+{{< youtube id="gs_H3TOrLxw" autoplay="false" >}}
+
 ## Hardware
 
 ### CAD
