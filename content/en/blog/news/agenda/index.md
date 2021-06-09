@@ -14,27 +14,40 @@ author: powJ2 ([@J2pow](https://twitter.com/j2pow))
 
 ### CAD
 
+https://github.com/Printed-Robots/balancing_robot/
+
 ### Building
 
 {{< youtube id="fcLHNTP9zKw" autoplay="false" >}}
 
 ## Software
 
-### ROS 2.0
+### Middleware
+
+- ROS 2.0
+- iceoryx
+- micro controller
 
 ### Control
 
-PID -> LQR -> MPC
+https://twitter.com/j2pow
 
-SciPy
+- From PID to LQR with hints of MPC
+- SciPy - a symbolic math library (https://github.com/Printed-Robots/videte_robot/blob/master/alg/videte_wheel.ipynb)
 
 ### Docs as Code
 
+https://printed-robots.github.io/
+
 ### Machine Learning
 
-Regression
+#### Regression
 
-Sindy
+- RandomForestRegressor
+- KNeighborsRegressor
+- LinearRegression
+
+#### Sindy
 
 
 
